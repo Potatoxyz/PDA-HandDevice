@@ -6,6 +6,10 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { Login } from './login.component';
 import { routing }       from './login.routing';
+import {LoginService} from "../../shared/commonService/login.service";
+import {JwtService} from "../../shared/PublicService/JwtService";
+import {UserService} from "../../shared/commonService/user.service";
+import {ApiService} from "../../shared/PublicService/api.service";
 
 
 @NgModule({
@@ -19,6 +23,12 @@ import { routing }       from './login.routing';
   ],
   declarations: [
     Login
-  ]
+  ],
+  providers:[
+    ApiService,
+    LoginService,
+    JwtService,
+    UserService
+  ],
 })
 export class LoginModule {}

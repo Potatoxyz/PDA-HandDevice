@@ -1,0 +1,28 @@
+.contain{
+  font-size: 16px;text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding:0;
+  max-width: 480px;
+}
+.contain .wrap{
+  width: 100%;padding:0 10px;}
+.Title{  margin-bottom: 15px;text-align: left;
+}
+.func{  margin-bottom: 10px;}
+.func a{
+  width: 100%;}
+.title{
+  background: red;
+  height: 30px;
+  line-height: 30px;
+}
+.input{border-radius: 5px;border: none;padding:5px;background: rgba(255,255,255,0.1);color: white;}
+.input:focus{outline-color: red;}
+input::-webkit-input-placeholder{color: rgba(255,255,255,.6)}
+.back{float: right;}.back a{color: white;text-decoration: underline!important;}
+@media screen and (max-width: 256px){
+  .contain{max-width: 256px;
+    padding: 0 10px;}
+}

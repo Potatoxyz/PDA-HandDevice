@@ -17,7 +17,7 @@
     "rimraf": "rimraf",
     "wintersmith": "wintersmith",
     "changelog": "standard-changelog",
-    "start": "ng serve",
+    "start": "ng serve --host 172.20.1.138",
     "start:hmr": "ng serve --hmr",
     "start:aot": "ng serve --aot",
     "start:prod": "ng serve --prod",
